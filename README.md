@@ -14,6 +14,7 @@ Once the broker knows what information they need to request from the API, they m
 
 # Server
 
+To get in touch with the service, the client just needs to subscribe to a specific topic. This way, only the client sees the answer from this specific service and not all other services that use Bethernet. To let the client know that it wants to see the Stock Exchange service, it just needs to subscribe to the topic 'Stock>quest>'. Once subscribed, the client can request a specific service from the Stock Exchange. 
 
+If the client wants to see a specific current stock, they just send it to the service. In this example, we'll use Apple: 'Stock>quest?>AAPL'. If they want to see yesterday's stock, they just send it to the broker: 'Stock>quest?>PreviousAAPL'.
 
-# Client
