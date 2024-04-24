@@ -20,3 +20,12 @@ To get in touch with the service, the client just needs to subscribe to a specif
 
 If the client wants to see a specific current stock, they just send it to the service. In this example, we'll use Apple: 'Stock>quest?>AAPL'. If they want to see yesterday's stock, they just send it to the broker: 'Stock>quest?>PreviousAAPL'.
 
+# Service 1: Request detailed information
+
+This service operates within the Sector of StockService and specialises in providing detailed information on specific stocks, in particular opening and closing prices. The workflow is as follows:
+
+After receiving a request via the ZMQ service, with the prefix "thibe>quest>?", Service 1 determines the client's desired outcome.
+
+It then identifies the relevant stock symbol within the request and initiates HTTP requests to the Polygon API in order to obtain the specified information about the stocks. The API responds with a JSON object containing details about the opening and closing prices of the specified stock on the specified date.
+
+After processing, the relevant information is returned to the user via the ZMQ service, subject to meeting predefined criteria.
