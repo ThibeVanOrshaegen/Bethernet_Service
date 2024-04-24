@@ -29,14 +29,15 @@ The relevant stock symbol is extracted from the received request, after which HT
 To make sure the client understands this service, this section explains it from their perspective.
 
 As a client, I have to connect to the service by using the correct addresses and ports. Outgoing messages go via `"tcp://benternet.pxl-ea-ict.be:24041" and incoming messages via ``"tcp://benternet.pxl-ea-ict.be:24042"`.
-
 To start using the service, I send a message to request the available services. All I have to do is send a message with the text `"thibe>quest?>StockService"` and I'll receive a list of available services and instructions on how to use them.
 
-After receiving the list of available services, I can choose the desired service and enter the required information. For example, if I want to use `"Service1"` and check the stock symbol `"APPL"`, I type `"thibe>quest?>Service1 APPL"` and send this message to the service.
-
-The service will respond with the requested information, such as the opening and closing prices of the stock. In this example, the stock is `"Apple"`.
+After receiving the list of available services, I can choose the desired service and enter the required information. For example, if I want to use `"Get_detailed_information_on_shares"` and check the stock symbol `"APPL"`, I type `"thibe>quest?>Get_detailed_information_on_shares APPL"` and send this message to the service. The service will respond with the requested information, such as the opening and closing prices of the stock. In this example, the stock is `"Apple"`.
 
 This is a great way to use the Stock Exchange Service to retrieve stock data and use it for your analysis or other purposes.
+
+![image](https://github.com/ThibeVanOrshaegen/Bethernet_Service/assets/114075982/e39173c9-e833-4ab6-9976-bc121a1459a5)
+
+
 
 # Service 1: Get detailed information on shares
 
@@ -52,3 +53,6 @@ Service2 is a service that specialises in calculating the difference between the
 
 The API responds with a JSON object containing details about the opening and closing prices of the specified stock.
 The data obtained from the API is used by Service2 to calculate the difference between the opening and closing prices. This calculated difference is then returned to the user via the ZMQ service.
+
+![image](https://github.com/ThibeVanOrshaegen/Bethernet_Service/assets/114075982/6dc81d7b-5fbf-45ab-bb4c-35144ac64308)
+
