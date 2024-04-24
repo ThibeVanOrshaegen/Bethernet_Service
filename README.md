@@ -16,6 +16,8 @@ Once the client has decided what they want to do, they just press Enter. This wi
 
 Once the broker knows what information they need to request from the API, they make an HTTP request to the API. They then send the information back to the broker on the correct topic. The client can then see the answer. Once that's done, the info is parsed and displayed to the client in a better way.
 
+![alt text](afbeelidngdiagrameen.png)
+
 # Service
 
 To get in touch with the service, the client just needs to subscribe to a specific topic. This way, only the client sees the answer from this specific service and not all other services that use Bethernet. To let the client know that it wants to see the Stock Exchange service, it just needs to subscribe to the topic 'Stock>quest>'. Once subscribed, the client can request a specific service from the Stock Exchange. 
@@ -56,3 +58,4 @@ The data obtained from the API is used by Service2 to calculate the difference b
 
 ![image](https://github.com/ThibeVanOrshaegen/Bethernet_Service/assets/114075982/6dc81d7b-5fbf-45ab-bb4c-35144ac64308)
 
+# Service 3: Mastermind
