@@ -37,8 +37,7 @@ After receiving the list of available services, I can choose the desired service
 
 This is a great way to use the Stock Exchange Service to retrieve stock data and use it for your analysis or other purposes.
 
-![image](https://github.com/ThibeVanOrshaegen/Bethernet_Service/assets/114075982/e39173c9-e833-4ab6-9976-bc121a1459a5)
-
+![image](https://github.com/ThibeVanOrshaegen/Bethernet_Service/assets/114075982/f95ff391-9fbe-4b56-987e-092c83f9beaa)
 
 
 # Service 1: Get detailed information on shares
@@ -49,6 +48,9 @@ After receiving a request via the ZMQ service, with the prefix `"thibe>quest>?"`
 
 It then identifies the relevant stock symbol within the request and initiates HTTP requests to the Polygon API in order to obtain the specified information about the stocks. The API responds with a JSON object containing details about the opening and closing prices of the specified stock on the specified date. After processing, the relevant information is returned to the user via the ZMQ service.
 
+![image](https://github.com/ThibeVanOrshaegen/Bethernet_Service/assets/114075982/27a7ffe5-1dfc-4b1d-ae6a-38d967f196d1)
+
+
 # Service 2: Calculation of exchange rate differential
 
 Service2 is a service that specialises in calculating the difference between the opening and closing prices of a particular stock.
@@ -56,6 +58,11 @@ Service2 is a service that specialises in calculating the difference between the
 The API responds with a JSON object containing details about the opening and closing prices of the specified stock.
 The data obtained from the API is used by Service2 to calculate the difference between the opening and closing prices. This calculated difference is then returned to the user via the ZMQ service.
 
-![image](https://github.com/ThibeVanOrshaegen/Bethernet_Service/assets/114075982/6dc81d7b-5fbf-45ab-bb4c-35144ac64308)
+![image](https://github.com/ThibeVanOrshaegen/Bethernet_Service/assets/114075982/98579d71-5fa7-4958-ab4b-e2bca6381482)
+
+This is what the result looks like:
+
+![image](https://github.com/ThibeVanOrshaegen/Bethernet_Service/assets/114075982/f472873c-855e-4502-b3b2-20b8cc227c43)
+
 
 # Service 3: Mastermind
