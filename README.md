@@ -50,6 +50,9 @@ It then identifies the relevant stock symbol within the request and initiates HT
 
 ![image](https://github.com/ThibeVanOrshaegen/Bethernet_Service/assets/114075982/27a7ffe5-1dfc-4b1d-ae6a-38d967f196d1)
 
+![image](https://github.com/ThibeVanOrshaegen/Bethernet_Service/assets/114075982/6a66a4be-f3f7-4a42-b868-bb8c2eab7ffc)
+
+
 
 # Service 2: Calculation of exchange rate differential
 
