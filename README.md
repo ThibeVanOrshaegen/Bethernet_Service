@@ -78,5 +78,8 @@ This shows how many colors are the right colour and in the right position, and h
 
 This service does not use an API. There is constant communication between the client and the service. To start this service the client has to subsribed on `"thibe>quest!>"`. To start this specific service the sener has to send `"thibe>quest?>Mastermind"`. After this the serice send back that the player can start guessing. The player must send four colors and the service is going to send feedback on wich color is right and on the right place. This is an example about how the player must send the message: `"thibe>quest?>Blue Yellow Red Black"`.
 
-![alt text](image-2.png)
-![alt text](image.png)
+![image](https://github.com/ThibeVanOrshaegen/Bethernet_Service/assets/114075982/c26c8541-9669-42a1-9d99-8f9958be57f7)
+
+![image](https://github.com/ThibeVanOrshaegen/Bethernet_Service/assets/114075982/917e143d-f727-4f0d-bd04-a906c471b082)
+
+
