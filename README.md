@@ -69,3 +69,14 @@ This is what the result looks like:
 
 
 # Service 3: Mastermind
+
+Service3 is a service that users can use to play Mastermind. Mastermind is a classic board game where two players try to crack each other's secret codes. 
+
+One player  creates a code(service) with colors, and the other player, the client has to guess the code within a certain number of turns. After each guess, the codemaker gives the codebreaker feedback.
+
+This shows how many colors are the right colour and in the right position, and how many are the right colour but in the wrong position. The codebreaker then uses this feedback to refine their guesses until they crack the code.
+
+This service does not use an API. There is constant communication between the client and the service. To start this service the client has to subsribed on `"thibe>quest!>"`. To start this specific service the sener has to send `"thibe>quest?>Mastermind"`. After this the serice send back that the player can start guessing. The player must send four colors and the service is going to send feedback on wich color is right and on the right place. This is an example about how the player must send the message: `"thibe>quest?>Blue Yellow Red Black"`.
+
+![alt text](image-2.png)
+![alt text](image.png)
